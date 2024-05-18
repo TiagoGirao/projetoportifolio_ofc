@@ -1,0 +1,142 @@
+* {
+  margin: 0; /* Retirando padding e margin universais*/
+  padding: 0;
+  box-sizing: border-box; /*Colocamos a medida do tamanho da caixa para ser medida através da borda  */
+}
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --righlight-color: rgba(255, 255, 255, 0.2);
+  --switch-br-url: url(./assets/moon-stars.svg);
+}
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.png);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --righlight-color: rgba(0, 0, 0, 0.1);
+  --switch-br-url: url(./assets/sun.svg);
+}
+body {
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; /* preenche/ cobre todo o espaço vazio */
+}
+body * /* Seletor universal > aplica para todos os elementos dentro do body */ {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+#container {
+  width: 360px; /* Largura de */
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+#profile {
+  text-align: center; /* Alguns elementos html p, possuem por padrão centralizações/configurações  css */
+  padding: 24px;
+}
+#profile img /*Procura a imagem dentro do id profile*/ {
+  width: 112px;
+  margin: auto;
+}
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+/*links */
+/*switch*/
+#switch {
+  
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-br-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%); /*Vai transpor o button */ 
+}
+.light #switch button {
+  right:0;
+  left: initial;
+
+}
+#switch span {
+display: block;
+width: 64px;
+height: 24px;
+background: var(--surface-color);
+border: 1px solid var(--stroke-color);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border-radius: 9999px;
+}
+
+
+ul {
+  list-style: none; /*Tira o estilo pardrão das listas */
+  display: flex;
+  flex-direction: column; /*transforma para alinhar em colunar */
+  gap: 16px;
+  padding: 24px 0;
+}
+ul li a {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24x;
+
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px); /*Embaça um pouco */
+  -webkit-backdrop-filter: blur(4px); /*Suporte para alguns navegadores */
+
+  text-decoration: none; /* RETIRA A LINHA DO LINK */
+  font-weight: 500;
+
+  transition: backgorund 0.3s;
+}
+/* pseudo- slector > quando o mouse estiver por cima */
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+#sociallinks {
+  display: flex;
+  justify-content: center;
+
+  padding: 24px 0;
+  font-size: 24px;
+}
+#sociallinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%; /*Cria a bolinha perfeita no ícone */
+}
+#sociallinks a:hover {
+  background: var(--righlight-color);
+}
+footer {
+  padding: 24px;
+  text-align: center;
+}

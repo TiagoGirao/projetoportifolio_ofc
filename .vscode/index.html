@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- Cria todasa essas configurações padrões do html, que podem ser modificadas-->
+<html lang="pt-br"  > <!-- Por padrão vem "en", mudaremos para pt-br-->
+<head>            <!-- Cabeça do html, configrações que não são vísívies para quem tá acessando a nossa página -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto</title>
+  <link rel="stylesheet" href="style.css"> <!-- Vai fazer link com  página do css-->
+</head>
+
+<body> <!-- Corpo do html, parte visível--> 
+    <div id="container"> 
+     <div id="profile"> <!-- Cixa do perfil -->
+    
+    <img src="./assets/Avatar_tiago.png" alt=" Foto  de perfil do Tiago Guimarães sorrindo, de bigode, com óculos preto e com uma blusa cinza">
+    <p> @tiagoguimaraes10 </p>
+    <div id="switch" onclick="toggleMode()">
+      <button></button>
+      <span></span>
+    </div>
+    <ul> <!-- Cria listas não ordenadas, se fosse uma tag ol, ciaria uma lista ordenada... (1,2,3,4)-->
+    <li> <!-- Cria a lista, a tag a é para coloar o lind e o target é para configurar que não saia da página ao criar o link -->
+      <a href="https://www.linkedin.com/in/tiago-gir%C3%A3o-1062641a5/" target="_blank"> Linkedin  </a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Baixar meu e-book</a>
+    </li>
+    <li>
+      <a href="https://github.com/TiagoGirao/TiagoGirao" target="_blank"> Github </a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Discover</a>
+    </li>
+
+
+  </ul>
+    <div id="sociallinks">
+    <a href="https://github.com/TiagoGirao/TiagoGirao" target="_blank">
+    <ion-icon name="logo-github"></ion-icon>
+    </a>
+  <a href="https://www.linkedin.com/in/tiago-gir%C3%A3o-1062641a5/" target="_blank">
+    <ion-icon name="logo-linkedin"></ion-icon>
+    </a> 
+   <a href="https://www.instagram.com/tiagoguimaraes10/" target= _blank>
+    <ion-icon name="logo-instagram"></ion-icon>
+   </a>
+  <a href="https://www.youtube.com/@rocketseat" target="_blank">
+     <ion-icon name="logo-youtube"></ion-icon>
+  </a>
+    </div>
+  <div> 
+ <footer> <!-- Feito para rodapes-->
+      Desenvolvido junto a  <a href="https://rocketseat.com.br/" target="_blank"> rocketseat </a>
+</footer>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- Links para os icones de mídia-->
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./script.js"> </script>
+</body>
+</html>
