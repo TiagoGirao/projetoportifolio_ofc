@@ -12,7 +12,7 @@ function toggleMode() {
   }
   else{
     // 
-    img.setAttribute('src','./assets/Avatar_tiago.png')
+    img.setAttribute('src','./assets/Avatar_light_mode.png')
 
   }
 }
