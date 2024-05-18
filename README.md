@@ -28,11 +28,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Git e Github
--Figma
+-Figama
 
 ## 💻 Projeto
 
-O Calendário da Copa é um projeto que cria um portifólio pra desenvolvedores.
+Projeto para demonstar um portifólio
 
 ## 🔖 Layout
 
