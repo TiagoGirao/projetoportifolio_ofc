@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto para demonstar um portifólio
+Projeto para demonstrar um portfolio.
 
 ## 🔖 Layout
 
