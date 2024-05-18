@@ -32,7 +32,8 @@ body * /* Seletor universal > aplica para todos os elementos dentro do body */ {
   color: var(--text-color);
 }
 #container {
-  width: 360px; /* Largura de */
+  width: 100%; /* Largura de */
+  max-width: 580px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
